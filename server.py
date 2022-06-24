@@ -1,8 +1,6 @@
 import socket
 import threading
 
-from cairo import FORMAT_A1 # so clients dont have to wait for other clients to send/recieve messages
-
 # gets local ip address of NIC. e.g. eth0, wlp2s0
 def get_ip_address():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
